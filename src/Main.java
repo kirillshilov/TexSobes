@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        try {
+            throw new RuntimeException();
+        }
+        catch (RuntimeException e){
+            System.out.println("Exception");
+        }
+        finally {
+            System.out.println("Finally");
+        }
     }
 }
